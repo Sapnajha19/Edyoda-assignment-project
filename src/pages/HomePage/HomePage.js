@@ -14,7 +14,7 @@ export default function HomePage() {
     setIsOpen(!isOpen);
   }
   return (
-    <div style={{}}>
+    <React.Fragment>
       <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", background: "#ffffff" }}>
         <div><img src={edyodaLogo} alt="website-logo" style={{ height: "50px", width: "150px", paddingLeft: "50px" }} /></div>
         <div style={{ display: "flex", flexDirection: "row", paddingRight: "70px", alignItems: "center", gap: "20px" }}>
@@ -50,36 +50,24 @@ export default function HomePage() {
             <div className='links'>HOME</div>
           </Link>
         </div>
-        <div style={{ width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-        <Link className='link' to="/module">
-          <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
-          <div className='links'>MODULES</div>
+        <div style={{ width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Link className='link' to="/module">
+            <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
+            <div className='links'>MODULES</div>
           </Link>
         </div>
         <div style={{ width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-        <Link className='link' to="/instructor">
-          <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
-          <div className='links'>INSTRUCTORS</div>
+          <Link className='link' to="/instructor">
+            <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
+            <div className='links'>INSTRUCTORS</div>
           </Link>
         </div>
       </div>
-      {/* <Home/> */}
-      {/* <ModulesPage/> */}
-      {/* <Router>
-      
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/module" element={<ModulesPage />} />
-          <Route path="/component2" element={<Component2 />} />
-          <Route path="/component3" element={<Component3 />} />
-        </Routes>
-      
-    </Router> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/module/*" element={<ModulesPage />} />
         <Route path="/instructor" element={InstructorPage} />
       </Routes>
-    </div>
+    </React.Fragment>
   )
 }

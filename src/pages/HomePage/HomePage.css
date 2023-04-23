@@ -89,7 +89,8 @@
   font-size: 12px;
   font-weight: 500;
 }
-.links:hover{
+
+.links:hover {
   cursor: pointer;
 }
 

@@ -4,7 +4,7 @@ import DataWrangling from "../../assets/DataWrangling.png"
 import bunny from "../../assets/bunny.jpeg"
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <div style={{ background: "#eff9f9", width: "1440px", height: "623px", display: "flex", flexDirection: "column", gap: "30px", justifyContent: "center", alignItems: "flex-start" }}>
         <div style={{ width: "1000px", height: "150px", position: "relative", left: "200px", bottom: "30px" }}>
           <p style={{ fontSize: "24px", fontWeight: "500" }}>Upcoming Certifications</p>
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div style={{ width: "1000px", height: "340px", position: "relative", left: "200px", display: "flex", flexDirection: "column", border: "1px solid red" }}>
           <p style={{ fontSize: "24px", fontWeight: "500" }}>Continue Learning</p>
-          <div style={{ position: "relative", left: "515px", bottom:"10px", color: "#5aa7e4", fontWeight: "bold", fontSize: "14px" }}>VIEW MODULE DETAILS</div>
+          <div style={{ position: "relative", left: "515px", bottom: "10px", color: "#5aa7e4", fontWeight: "bold", fontSize: "14px" }}>VIEW MODULE DETAILS</div>
           <div style={{ display: "flex", flexDirection: "row", gap: "30px" }}>
             <div style={{ display: "flex", flexDirection: "row", background: "#ffffff", width: "700px", height: "250px", borderRadius: "4px", border: "1px solid #c6ebf5", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.1)" }}>
               <div style={{ display: "flex", flexDirection: "row" }}>
@@ -93,18 +93,18 @@ export default function Home() {
             </div>
             <div style={{ background: "#ffffff", width: "300px", height: "250px", borderRadius: "4px", border: "1px solid #c6ebf5", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.1)" }}>
               <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "flex-start", gap: "10px", position: "relative", left: "50px" }}>
-                <p style={{fontSize:"15px"}}>Progress Overview</p>
+                <p style={{ fontSize: "15px" }}>Progress Overview</p>
                 <div style={{ borderRadius: "4px", border: "1px solid #c3e9ed", height: "50px", width: "200px" }}>
-                  <div style={{ display: "flex", flexDirection: "row",gap:"80px", justifyContent: "space-evenly" , alignItems:"center"}}>
-                    <p style={{fontSize:"20px", fontWeight:"400"}}>0%</p>
-                    <p style={{fontSize:"12px", color:"#565656"}}>Overall Grade</p>
+                  <div style={{ display: "flex", flexDirection: "row", gap: "80px", justifyContent: "space-evenly", alignItems: "center" }}>
+                    <p style={{ fontSize: "20px", fontWeight: "400" }}>0%</p>
+                    <p style={{ fontSize: "12px", color: "#565656" }}>Overall Grade</p>
                   </div>
                   <div style={{ width: "180px", height: "7px", background: "#ecdcdc", borderRadius: "10px", position: "relative", bottom: "20px", left: "10px" }}></div>
                 </div>
                 <div style={{ borderRadius: "4px", border: "1px solid #c3e9ed", height: "50px", width: "200px" }}>
-                  <div style={{ display: "flex", flexDirection: "row",gap:"80px", justifyContent: "space-evenly" , alignItems:"center"}}>
-                    <p style={{fontSize:"20px", fontWeight:"400"}}>0%</p>
-                    <p style={{fontSize:"12px", color:"#565656"}}>Attendance</p>
+                  <div style={{ display: "flex", flexDirection: "row", gap: "80px", justifyContent: "space-evenly", alignItems: "center" }}>
+                    <p style={{ fontSize: "20px", fontWeight: "400" }}>0%</p>
+                    <p style={{ fontSize: "12px", color: "#565656" }}>Attendance</p>
                   </div>
                   <div style={{ width: "180px", height: "7px", background: "#ecdcdc", borderRadius: "10px", position: "relative", bottom: "20px", left: "10px" }}></div>
                 </div>
@@ -115,6 +115,6 @@ export default function Home() {
 
         </div>
       </div>
-    </div>
+    </React.Fragment>
   )
 }

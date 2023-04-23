@@ -3,7 +3,7 @@ import calendar from "../../../assets/calendar.svg"
 import clockBlue from "../../../assets/clockBlue.svg"
 export default function Quiz() {
     return (
-        <>
+        <React.Fragment>
             <div style={{ background: "#f7f9fb", width: "1130px", height: "638px", position: "absolute", top: "110px", left: "308px" }}>
                 <div style={{ paddingLeft: "110px" }}>
                     <p style={{ fontSize: "20px", fontWeight: "bold" }}>Quiz-1: Data Types</p>
@@ -52,6 +52,6 @@ export default function Quiz() {
                     </div>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     )
 }
