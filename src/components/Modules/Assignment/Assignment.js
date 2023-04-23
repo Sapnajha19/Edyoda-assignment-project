@@ -23,7 +23,7 @@ export default function Assignment() {
                     <p style={{ fontSize: "15px", fontWeight: "bold" }}>Assignment Details</p>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", paddingTop: "80px" }}>
-                    <div style={{ background: "#ffffff", width: "900px", height: "120px", borderRadius: "4px", border: "1px solid #c6ebf5", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.1)" }}>
+                    <div style={{ background: "#ffffff", width: "900px", height: "120px", borderRadius: "4px", border: "1px solid #a4cae9", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.1)" }}>
                         <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center" }}>
                             <div style={{ display: "flex", flexDirection: "column" }}>
                                 <p style={{ fontSize: "20px", fontWeight: "semibold" }}>3</p>

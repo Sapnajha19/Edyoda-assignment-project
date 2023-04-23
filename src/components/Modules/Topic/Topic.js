@@ -17,15 +17,15 @@ export default function Topic() {
                         <img src={informationCircle1} alt="info-icon" style={{ height: "20px", width: "20px" }} />
                         <p style={{ fontWeight: "bold", fontSize: "14px" }}>SESSION PLAN</p>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" , borderBottom:"1px solid #a4cae9" , paddingLeft: "18px", paddingRight: "15px"}}>
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", borderBottom: "1px solid #a4cae9", paddingLeft: "18px", paddingRight: "15px" }}>
                         <img src={topic} alt="video=icon" style={{ height: "20px", width: "20px" }} />
                         <p style={{ color: "#5f5c5c", fontWeight: "bold", fontSize: "14px" }}>PRE-WATCH VIDEOS</p>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" , borderBottom:"1px solid #a4cae9" , paddingLeft: "18px", paddingRight: "15px"}}>
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", borderBottom: "1px solid #a4cae9", paddingLeft: "18px", paddingRight: "15px" }}>
                         <img src={videocam} alt="" style={{ height: "20px", width: "20px" }} />
                         <p style={{ color: "#5f5c5c", fontWeight: "bold", fontSize: "14px" }}>SESSION RECORDING</p>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" , borderBottom:"1px solid #a4cae9" , paddingLeft: "18px", paddingRight: "15px"}}>
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", borderBottom: "1px solid #a4cae9", paddingLeft: "18px", paddingRight: "15px" }}>
                         <img src={document} alt="" style={{ height: "20px", width: "20px" }} />
                         <p style={{ color: "#5f5c5c", fontWeight: "bold", fontSize: "14px" }}>REFERENCES</p>
                     </div>
