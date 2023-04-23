@@ -21,7 +21,7 @@ The Instructor Page is a part of the default layout for this project, and curren
 
 ### Preview
 
-[Video Preview]("https://www.youtube.com/watch?v=nLqm11IKrSw")
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=nLqm11IKrSw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 #### Installation
 
