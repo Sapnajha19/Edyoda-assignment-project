@@ -56,19 +56,19 @@ export default function HomePage() {
         <div style={{ color: "#ffffff", fontSize: "20px" }}>Data Scientist Program</div>
       </div>
       <div style={{ height: "649px", width: "105px", background: "#192854", position: "absolute", top: "100px", display: "flex", flexDirection: "column" }}>
-        <div style={{ background: `${activeLink === 'home' ? "#ffffff" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ background: `${activeLink === 'home' ? "#e6eef2" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Link className='link' to="/" onClick={() => handleLinkClick("home")}>
             <img src={activeLink === 'home' ? home : homeDark} alt="home-icon" style={{ height: "30px", width: "30px" }} />
             <div className='links' style={{ color: `${activeLink === 'home' ? "#04032B" : "#ffffff"}` }}>HOME</div>
           </Link>
         </div>
-        <div style={{ background: `${activeLink === 'module' ? "#ffffff" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ background: `${activeLink === 'module' ? "#e6eef2" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Link className='link' to="/module" onClick={() => handleLinkClick("module")}>
             <img src={activeLink === 'module' ? module : moduleDark} alt="module-icon" style={{ height: "30px", width: "30px" }} />
             <div className='links' style={{ color: `${activeLink === 'module' ? "#04032B" : "#ffffff"}` }}>MODULES</div>
           </Link>
         </div>
-        <div style={{ background: `${activeLink === 'instructor' ? "#ffffff" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ background: `${activeLink === 'instructor' ? "#e6eef2" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Link className='link' to="/instructor" onClick={() => handleLinkClick("instructor")}>
             <img src={activeLink === 'instructor' ? instructor : instructorDark} alt="instructor-icon" style={{ height: "30px", width: "30px" }} />
             <div className='links' style={{ color: `${activeLink === 'instructor' ? "#04032B" : "#ffffff"}` }}>INSTRUCTORS</div>
