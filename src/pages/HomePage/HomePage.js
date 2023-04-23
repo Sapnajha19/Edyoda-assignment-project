@@ -3,6 +3,11 @@ import "./HomePage.css"
 import edyodaLogo from "../../assets/edyodaLogo.png"
 import bunny from "../../assets/bunny.jpeg"
 import home from "../../assets/home.png"
+import homeDark from "../../assets/homeDark.png"
+import module from "../../assets/module.png"
+import moduleDark from "../../assets/module Dark.png"
+import instructor from "../../assets/instructor.png"
+import instructorDark from "../../assets/instructorDark.png"
 import Home from "../../components/Home/Home"
 import ModulesPage from '../ModulesPage/ModulesPage'
 import { Routes, Route, Link } from 'react-router-dom'
@@ -13,6 +18,13 @@ export default function HomePage() {
   function toggleDropdown() {
     setIsOpen(!isOpen);
   }
+
+  const [activeLink, setActiveLink] = useState("home");
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <React.Fragment>
       <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", background: "#ffffff" }}>
@@ -43,23 +55,23 @@ export default function HomePage() {
         </div>
         <div style={{ color: "#ffffff", fontSize: "20px" }}>Data Scientist Program</div>
       </div>
-      <div style={{ height: "632px", width: "105px", background: "#192854", position: "absolute", top: "100px", display: "flex", flexDirection: "column" }}>
-        <div style={{ background: "#ffffff", width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <Link className='link' to="/">
-            <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
-            <div className='links'>HOME</div>
+      <div style={{ height: "649px", width: "105px", background: "#192854", position: "absolute", top: "100px", display: "flex", flexDirection: "column" }}>
+        <div style={{ background: `${activeLink==='home'? "#ffffff" : "#192854"}` , width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Link className='link' to="/" onClick={() => handleLinkClick("home")}>
+            <img src={activeLink === 'home' ? home : homeDark} alt="home-icon" style={{ height: "30px", width: "30px"}} />
+            <div className='links' style={{color:`${activeLink==='home'? "#04032B" : "#ffffff"}`}}>HOME</div>
           </Link>
         </div>
-        <div style={{ width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <Link className='link' to="/module">
-            <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
-            <div className='links'>MODULES</div>
+        <div style={{background: `${activeLink==='module'? "#ffffff" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Link className='link' to="/module" onClick={() => handleLinkClick("module")}>
+            <img src={activeLink === 'module' ? module : moduleDark} alt="module-icon" style={{ height: "30px", width: "30px"}} />
+            <div className='links' style={{color:`${activeLink==='module'? "#04032B" : "#ffffff"}`}}>MODULES</div>
           </Link>
         </div>
-        <div style={{ width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <Link className='link' to="/instructor">
-            <img src={home} alt="home-icon" style={{ height: "30px", width: "30px" }} />
-            <div className='links'>INSTRUCTORS</div>
+        <div style={{background: `${activeLink==='instructor'? "#ffffff" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Link className='link' to="/instructor" onClick={() => handleLinkClick("instructor")}>
+            <img src={activeLink === 'instructor' ? instructor : instructorDark} alt="instructor-icon" style={{ height: "30px", width: "30px" }} />
+            <div className='links' style={{color:`${activeLink==='instructor'? "#04032B" : "#ffffff"}`}}>INSTRUCTORS</div>
           </Link>
         </div>
       </div>
