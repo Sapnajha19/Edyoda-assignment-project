@@ -64,13 +64,13 @@ export default function HomePage() {
         </div>
         <div style={{ background: `${activeLink === 'module' ? "#e6eef2" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Link className='link' to="/module" onClick={() => handleLinkClick("module")}>
-            <img src={activeLink === 'module' ? module : moduleDark} alt="module-icon" style={{ height: "30px", width: "30px" }} />
+            <img src={activeLink === 'module' ? module : moduleDark} alt="module-icon" style={{ height: "30px", width: "30px" , paddingLeft:"10px"}} />
             <div className='links' style={{ color: `${activeLink === 'module' ? "#04032B" : "#ffffff"}` }}>MODULES</div>
           </Link>
         </div>
         <div style={{ background: `${activeLink === 'instructor' ? "#e6eef2" : "#192854"}`, width: "100%", height: "80px", position: "relative", top: "9px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Link className='link' to="/instructor" onClick={() => handleLinkClick("instructor")}>
-            <img src={activeLink === 'instructor' ? instructor : instructorDark} alt="instructor-icon" style={{ height: "30px", width: "30px" }} />
+            <img src={activeLink === 'instructor' ? instructor : instructorDark} alt="instructor-icon" style={{ height: "30px", width: "30px" , paddingLeft:"25px"}} />
             <div className='links' style={{ color: `${activeLink === 'instructor' ? "#04032B" : "#ffffff"}` }}>INSTRUCTORS</div>
           </Link>
         </div>
