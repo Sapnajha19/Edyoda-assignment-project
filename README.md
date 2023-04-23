@@ -20,9 +20,8 @@ The Modules Page also features a default Sidebar layout, which provides navigati
 The Instructor Page is a part of the default layout for this project, and currently does not have any functionality implemented. Its purpose is solely to complete the frontend design and provide a link to a potential future feature or functionality.
 
 ### Preview
-<video width="320" height="240" controls>
-  <source src="src/assets/Preview.mp4" type="video/mp4">
-</video>
+
+[Video Preview]("https://drive.google.com/file/d/1X0JU0rnsLvW8xD01avCEea8NFF_pb7ES/view?usp=sharing")
 
 #### Installation
 
@@ -39,3 +38,6 @@ React Router Dom
 #### Credits
 
 This project is created by Sapna Jha for Edyoda as an assignment. All rights to any copyrighted material used in this project belong to their respective owners.
+
+
+[def]: assets/Preview.mp4
