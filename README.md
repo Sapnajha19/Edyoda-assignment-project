@@ -19,6 +19,11 @@ The Modules Page also features a default Sidebar layout, which provides navigati
 ### Instructor Page
 The Instructor Page is a part of the default layout for this project, and currently does not have any functionality implemented. Its purpose is solely to complete the frontend design and provide a link to a potential future feature or functionality.
 
+### Preview
+<video width="320" height="240" controls>
+  <source src="src/assets/Preview.mp4" type="video/mp4">
+</video>
+
 #### Installation
 
 * Clone the repository.
