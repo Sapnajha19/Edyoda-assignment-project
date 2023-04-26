@@ -43,7 +43,7 @@ export default function Topic() {
                         <p style={{ color: "black", paddingTop: "20px" }}>Session Details</p>
                     </div>
                 </div>
-                <img src={message} alt="message-icon" style={{height:"40px", height:"40px", position:"absolute",  bottom:"20px", right:"20px"}}/>
+                <img src={message} alt="message-icon" style={{height:"40px", width:"40px", position:"absolute",  bottom:"20px", right:"20px"}}/>
             </div>
         </React.Fragment>
     )

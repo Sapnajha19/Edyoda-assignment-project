@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <img src={message} alt="message-icon" style={{height:"40px", height:"40px", position:"relative",  bottom:"10px", left:"1225px"}} />
+        <img src={message} alt="message-icon" style={{height:"40px", width:"40px", position:"relative",  bottom:"10px", left:"1225px"}} />
       </div>
     </React.Fragment>
   )
