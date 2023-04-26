@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./HomePage.css"
 import edyodaLogo from "../../assets/edyodaLogo.png"
-import bunny from "../../assets/bunny.jpeg"
+import bunnyLogo from "../../assets/bunnyLogo.png"
 import home from "../../assets/home.png"
 import homeDark from "../../assets/homeDark.png"
 import module from "../../assets/module.png"
@@ -31,7 +31,7 @@ export default function HomePage() {
         <div><img src={edyodaLogo} alt="website-logo" style={{ height: "50px", width: "150px", paddingLeft: "50px" }} /></div>
         <div style={{ display: "flex", flexDirection: "row", paddingRight: "70px", alignItems: "center", gap: "20px" }}>
           <div>Hi Test Learner!</div>
-          <div><img src={bunny} alt="avatar" style={{ height: "40px", width: "40px", borderRadius: "50%" }} /></div>
+          <div><img src={bunnyLogo} alt="avatar" style={{ height: "40px", width: "35px", borderRadius: "50%" }} /></div>
         </div>
       </div>
       <div style={{ display: "flex", flexDirection: "row", background: "#192854", height: "55px", alignItems: "center", gap: "20px" }}>

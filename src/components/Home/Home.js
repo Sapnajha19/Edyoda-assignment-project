@@ -1,7 +1,7 @@
 import React from 'react'
 import DataAnalysis from "../../assets/DataAnalysis.png"
 import DataWrangling from "../../assets/DataWrangling.png"
-import bunny from "../../assets/bunny.jpeg"
+import bunnyLogo from "../../assets/bunnyLogo.png"
 import message from "../../assets/message.png"
 export default function Home() {
   return (
@@ -44,8 +44,8 @@ export default function Home() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
                       <div style={{ fontSize: "15px" }}>DATA WRANGLING &</div>
                       <div style={{ fontSize: "15px" }}>VISUALIZATION</div>
-                      <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                        <img src={bunny} alt="avatar" style={{ height: "30px", width: "30px", borderRadius: "50%" }} />
+                      <div style={{ display: "flex", flexDirection: "row", gap:"5px", alignItems: "center" }}>
+                        <img src={bunnyLogo} alt="avatar" style={{ height: "30px", width: "25px", borderRadius: "50%" }} />
                         <div style={{ color: "#5aa7e4", fontSize: "12px", fontWeight: "500" }}>Test Instructor</div>
                       </div>
                     </div>
