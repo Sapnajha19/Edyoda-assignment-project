@@ -2,11 +2,12 @@ import React from 'react'
 import DataAnalysis from "../../assets/DataAnalysis.png"
 import DataWrangling from "../../assets/DataWrangling.png"
 import bunny from "../../assets/bunny.jpeg"
+import message from "../../assets/message.png"
 export default function Home() {
   return (
     <React.Fragment>
       <div style={{ background: "#f7f9fb", width: "1440px", height: "640px", display: "flex", flexDirection: "column", gap: "30px", justifyContent: "center", alignItems: "flex-start", overflowX: "hidden" }}>
-        <div style={{ width: "1000px", height: "150px", position: "relative", left: "200px", bottom: "30px" }}>
+        <div style={{ width: "1000px", height: "150px", position: "relative", left: "200px", bottom: "0px" }}>
           <p style={{ fontSize: "24px", fontWeight: "500" }}>Upcoming Certifications</p>
           <div style={{ background: "#ffffff", width: "1000px", height: "120px", borderRadius: "4px", border: "1px solid #a4cae9", boxShadow: "0 2px 3px 0 rgba(0, 0, 0, 0.1)", display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center" }}>
             <img src={DataAnalysis} alt="data-analytics" style={{ width: "60px", height: "60px" }} />
@@ -31,7 +32,7 @@ export default function Home() {
             <button style={{ height: "30px", borderRadius: "15px", background: "white", border: "1px solid #5aa7e4", color: "#5aa7e4" }}>VIEW EXAM DETAILS</button>
           </div>
         </div>
-        <div style={{ width: "1000px", height: "340px", position: "relative", left: "200px", display: "flex", flexDirection: "column" }}>
+        <div style={{ width: "1000px", height: "340px", position: "relative", left: "200px", top:"50px", display: "flex", flexDirection: "column" }}>
           <p style={{ fontSize: "24px", fontWeight: "500" }}>Continue Learning</p>
           <div style={{ position: "relative", left: "515px", bottom: "10px", color: "#5aa7e4", fontWeight: "bold", fontSize: "14px" }}>VIEW MODULE DETAILS</div>
           <div style={{ display: "flex", flexDirection: "row", gap: "30px" }}>
@@ -112,8 +113,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
+        <img src={message} alt="message-icon" style={{height:"40px", height:"40px", position:"relative",  bottom:"10px", left:"1225px"}} />
       </div>
     </React.Fragment>
   )

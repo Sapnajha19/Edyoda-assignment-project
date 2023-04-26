@@ -1,6 +1,7 @@
 import React from 'react'
 import calendar from "../../../assets/calendar.svg"
 import clockBlue from "../../../assets/clockBlue.svg"
+import message from "../../../assets/message.png"
 export default function Quiz() {
     return (
         <React.Fragment>
@@ -51,6 +52,7 @@ export default function Quiz() {
                         </div>
                     </div>
                 </div>
+                <img src={message} alt="message-icon" style={{height:"40px", height:"40px", position:"absolute",  bottom:"20px", right:"20px"}}/>
             </div>
         </React.Fragment>
     )

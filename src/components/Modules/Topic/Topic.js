@@ -3,6 +3,7 @@ import informationCircle1 from "../../../assets/informationCircle1.svg"
 import topic from "../../../assets/topic.svg"
 import videocam from "../../../assets/videocam.svg"
 import document from "../../../assets/document.svg"
+import message from "../../../assets/message.png"
 export default function Topic() {
     return (
         <React.Fragment>
@@ -42,6 +43,7 @@ export default function Topic() {
                         <p style={{ color: "black", paddingTop: "20px" }}>Session Details</p>
                     </div>
                 </div>
+                <img src={message} alt="message-icon" style={{height:"40px", height:"40px", position:"absolute",  bottom:"20px", right:"20px"}}/>
             </div>
         </React.Fragment>
     )
